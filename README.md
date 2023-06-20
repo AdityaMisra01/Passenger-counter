@@ -3,9 +3,11 @@ Quick start:
 ```
 $ npm install
 $ npm start
+Head over to https://vitejs.dev/ to learn more about using vite
 ````
+```
 #HTML
-
+```
 ##Explanation of the HTML document
 The HTML document creates a web page with a header, body, and script. It contains links to external stylesheets and 
 defines the content of the web page, which includes a heading, buttons, and a paragraph. The behavior of the web page is 
@@ -36,9 +38,9 @@ or saved.
 
 ###References
 HTML Introduction
-
+```
 #JavaScript
-
+```
 ##Explanation of the code
 The code defines two functions, increment and save, that updates the value of a counter and display it on a web page. 
 The increment function increments the counter by 1 and updates the counter display. The save function saves the current 
