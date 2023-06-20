@@ -1,58 +1,30 @@
-/* Set the background image to computer.png and adjust its size to cover the entire body */
-body {
-    background-image: url("computer.png");
-    background-size: cover;
-    /* background-repeat: no-repeat, repeat; */
-    font-family:cursive;
-    font-weight: bold;
-    text-align: center;
-}
+<!-- This is an HTML document that creates a web page with a header, body, and script. -->
 
-/* Style for the main heading */
-h1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: bisque;
-}
-
-/* Style for the subheading */
-h2 {
-    font-optical-sizing: 50px;
-    font-size: 50px;
-    margin-top: 50px;
-    margin-bottom: 70px;
-    color: aquamarine;
-}
-
-/* Style for the paragraph text */
-p{
-    margin-top: 80px;
-    font-optical-sizing: 50px;
-    font-size: 25px;
-    margin-bottom: 20px;
-    color: rgba(205, 245, 6, 0.948);  
-    
-}
-
-/* Style for the button */
-button {
-    border: none;
-    border-radius: 5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    width: 200px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-}
-
-/* Style for the increment button */
-#increment-btn {
-    background: rgb(255, 255, 255);
-}
-
-/* Style for the save button */
-#save-btn {
-    background: rgb(255, 255, 255);
-}
+<!-- The head section contains links to external stylesheets and other metadata. -->
+<html>
+    <head>
+        <!-- This link points to a stylesheet that normalizes the default styles across different browsers. -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <!-- This link points to a custom stylesheet that defines styles for the page. -->
+        <link rel="stylesheet" href="index.css">
+        
+    </head>
+    <body>
+        <!-- The body section contains the content of the web page. -->
+        <h1>People entered:</h1>
+        <!-- This heading displays the current count of people entered. -->
+        <h2 id="count-el">0</h2>
+        <div>
+            <!-- This button increments the count of people entered when clicked. -->
+            <button id="increment-btn" onclick="increment()">INCREMENT</button>
+            <!-- This button saves the current count of people entered when clicked. -->
+            <button id="save-btn" onclick="save()">SAVE</button>
+        </div>
+        <div>
+            <!-- This paragraph displays the previous entries of people entered. -->
+            <p id="save-el">Previous entries: </p>
+        </div>
+        <!-- This script tag links to a JavaScript file that defines the behavior of the web page. -->
+        <script src="index.js"></script>
+    </body>
+</html>
