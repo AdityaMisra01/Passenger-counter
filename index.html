@@ -1,0 +1,29 @@
+<!-- This is an HTML document that creates a web page with a header, body, and script. -->
+
+<!-- The head section contains links to external stylesheets and other metadata. -->
+<html>
+    <head>
+        <!-- This link points to a stylesheet that normalizes the default styles across different browsers. -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <!-- This link points to a custom stylesheet that defines styles for the page. -->
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <!-- The body section contains the content of the web page. -->
+        <h1>People entered:</h1>
+        <!-- This heading displays the current count of people entered. -->
+        <h2 id="count-el">0</h2>
+        <div>
+            <!-- This button increments the count of people entered when clicked. -->
+            <button id="increment-btn" onclick="increment()">INCREMENT</button>
+            <!-- This button saves the current count of people entered when clicked. -->
+            <button id="save-btn" onclick="save()">SAVE</button>
+        </div>
+        <div>
+            <!-- This paragraph displays the previous entries of people entered. -->
+            <p id="save-el">Previous entries: </p>
+        </div>
+        <!-- This script tag links to a JavaScript file that defines the behavior of the web page. -->
+        <script src="index.js"></script>
+    </body>
+</html>
